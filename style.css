@@ -1,0 +1,146 @@
+/* Base and Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  background-color: #f6f8fa;
+  color: #24292f;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 320px;
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #d0d7de;
+  overflow-y: auto;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0969da;
+  margin-bottom: 1rem;
+}
+
+.sidebar h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  color: #1f2328;
+}
+
+.sidebar p {
+  text-align: center;
+  color: #57606a;
+}
+
+.sidebar section {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #d0d7de;
+  padding-bottom: 0.25rem;
+  color: #1f2328;
+}
+
+.resume-download {
+  background-color: #f0f6fc;
+  border: 1px solid #d0d7de;
+  padding: 0.5rem;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.resume-download a {
+  display: block;
+  font-weight: bold;
+  color: #0969da;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 2rem;
+  background-color: #f6f8fa;
+}
+
+.content section {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #e1e4e8;
+  padding-bottom: 1.5rem;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #000000;
+}
+
+.content ul {
+  padding-left: 1.2rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    border-right: none;
+    border-bottom: 1px solid #d0d7de;
+  }
+
+  .content {
+    height: auto;
+    overflow: visible;
+    padding: 1rem;
+  }
+
+  .content section {
+    margin-bottom: 1.5rem;
+  }
+}
