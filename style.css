@@ -67,7 +67,7 @@ a:hover {
 }
 
 .sidebar h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   border-bottom: 1px solid #d0d7de;
   padding-bottom: 0.25rem;
@@ -112,12 +112,12 @@ a:hover {
 
 .content ul {
   padding-left: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .content li {
-  margin-bottom: 0.3rem;
   padding-left: 1.2rem;
-  font-size: 0.90rem;
+  margin-top: 0.5rem;
 }
 
 /* Responsive */
